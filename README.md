@@ -15,19 +15,19 @@
 
 `sudo rm -rf /usr/local/go`
 
-curl https://dl.google.com/go/go1.19.2.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
+`curl https://dl.google.com/go/go1.19.2.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -`
 
-cat <<'EOF' >>$HOME/.profile
+`cat <<'EOF' >>$HOME/.profile`
 
-export GOROOT=/usr/local/go
+`export GOROOT=/usr/local/go`
 
-export GOPATH=$HOME/go
+`export GOPATH=$HOME/go`
 
-export GO111MODULE=on
+`export GO111MODULE=on`
 
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+`export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin`
 
-EOF
+`EOF`
 
 `source $HOME/.profile`
 
@@ -43,12 +43,12 @@ EOF
 
 数据库采用sqllite 通过手动创建的，只有一个Gnoland表，表结构如下
 
-（"bjtime" varchar(256)----北京时间
+`（"bjtime" varchar(256)----北京时间
 "name" varchar(256)----钱包名称
 "addr" varchar(256)----钱包地址
 "pub" varchar(256)----私钥
 "key" varchar(256)----助记词
-"balance" varchar(256)----余额）
+"balance" varchar(256)----余额）`
 ### step2：
 
 `python3 1`进行钱包的创建
