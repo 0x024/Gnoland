@@ -44,12 +44,13 @@ def get_balance():
 
 
 def get_Gnoland():
+	count=1000
 	pwd=os.getcwd()
 	db_pwd=pwd+"/Gnoland.db"
 	print(db_pwd)
 	conn =sqlite3.connect(db_pwd)
 	c=conn.cursor()
-	for i in range(1000000):
+	for i in range(count):
 		tampletime=time.time()
 		current=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(tampletime))
 		name=str(int(tampletime*1000))
