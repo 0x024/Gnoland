@@ -44,11 +44,17 @@
 数据库采用sqllite 通过手动创建的，只有一个Gnoland表，表结构如下
 
 `（"bjtime" varchar(256)----北京时间`
+
 `"name" varchar(256)----钱包名称`
+
 `"addr" varchar(256)----钱包地址`
+
 `"pub" varchar(256)----私钥`
+
 `"key" varchar(256)----助记词`
+
 `"balance" varchar(256)----余额）`
+
 ### step2：
 
 `python3 1`进行钱包的创建
