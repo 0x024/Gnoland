@@ -43,7 +43,7 @@
 
 数据库采用sqllite 通过手动创建的，只有一个Gnoland表，表结构如下
 
-`（"bjtime" varchar(256)----北京时间`
+`"bjtime" varchar(256)----北京时间`
 
 `"name" varchar(256)----钱包名称`
 
