@@ -7,13 +7,13 @@
 
 推荐使用Ubuntu 22.04 x64
 
-sudo apt-get update -y && sudo apt-get upgrade -y
+`sudo apt-get update -y && sudo apt-get upgrade -y`
 
-sudo apt-get install curl build-essential jq git -y
+`sudo apt-get install curl build-essential jq git -y`
 
-cd
+`cd`
 
-sudo rm -rf /usr/local/go
+`sudo rm -rf /usr/local/go`
 
 curl https://dl.google.com/go/go1.19.2.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
 
@@ -29,13 +29,13 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 EOF
 
-source $HOME/.profile
+`source $HOME/.profile`
 
-git clone https://github.com/gnolang/gno/
+`git clone https://github.com/gnolang/gno/`
 
-cd gno
+`cd gno`
 
-make install
+`make install`
 
 最后输入gnokey来确定环境是否搭建完成
 
