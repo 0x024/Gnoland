@@ -34,7 +34,7 @@ def get_balance():
 			print("addr: "+addr)
 			print("balance: "+coins)
 			print("total have addrs "+str(total))
-			print("now update the"+str(tablecount)+" addrs")
+			print("now update "+str(tablecount)+" addrs")
 			print("##############")
 			tablecount+=1
 		except TypeError:
@@ -44,14 +44,14 @@ def get_balance():
 			print("addr: "+addr)
 			print("balance: "+"0ugnot")
 			print("total have addrs "+str(total))
-			print("now update the"+str(tablecount)+" addrs")
+			print("now update "+str(tablecount)+" addrs")
 			tablecount+=1
 			print("##############")
 	conn.close()
 
 
 def get_Gnoland():
-	count=1000
+	count=10
 	pwd=os.getcwd()
 	db_pwd=pwd+"/Gnoland.db"
 	print(db_pwd)
