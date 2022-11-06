@@ -7,7 +7,7 @@
 
 推荐使用Ubuntu 22.04 x64
 
-‘sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y
 
 sudo apt-get install curl build-essential jq git -y
 
@@ -35,9 +35,9 @@ git clone https://github.com/gnolang/gno/
 
 cd gno
 
-make install’
+make install
 
-最后输入‘gnokey’来确定环境是否搭建完成
+最后输入gnokey来确定环境是否搭建完成
 
 ### step1:
 
@@ -51,9 +51,9 @@ make install’
 "balance" varchar(256)----余额）
 ### step2：
 
-’python3 1‘ 进行钱包的创建
+`python3 1`进行钱包的创建
 
-‘python3 2’ 进行钱包余额查询
+`python3 2`进行钱包余额查询
 ### step3:
 
 1:如需修改创建钱包数量，需修改get_Gnoland()中的count值即可
