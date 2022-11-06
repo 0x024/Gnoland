@@ -18,6 +18,9 @@ def get_balance():
 	c=conn.cursor()	
 	c.execute('SELECT addr FROM Gnoland;')
 	rows=c.fetchall()
+	tablecount=1
+	c.execute("SELECT COUNT(*) FROM Gnoland;")
+	total=str(c.fetchall()[0][0])
 	for i in rows:
 		try:
 			addr=i[0]
@@ -30,15 +33,19 @@ def get_balance():
 			print("**************")
 			print("addr: "+addr)
 			print("balance: "+coins)
+			print("total have addrs "+str(total))
+			print("now update the"+str(tablecount)+" addrs")
 			print("##############")
-			#js=json.loads(result)
-			#print (js)
+			tablecount+=1
 		except TypeError:
 			c.execute("UPDATE Gnoland SET balance = '0' where addr=='%s';"%(addr))
 			conn.commit()
 			print("**************")
 			print("addr: "+addr)
 			print("balance: "+"0ugnot")
+			print("total have addrs "+str(total))
+			print("now update the"+str(tablecount)+" addrs")
+			tablecount+=1
 			print("##############")
 	conn.close()
 

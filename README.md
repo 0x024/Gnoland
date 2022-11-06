@@ -57,9 +57,10 @@
 
 ### step2：
 
-`python3 1`进行钱包的创建
+`python3 Gnoland.py 1`进行钱包的创建
 
-`python3 2`进行钱包余额查询
+`python3 Gnoland.py 2`进行钱包余额查询
+
 ### step3:
 
 1:如需修改创建钱包数量，需修改get_Gnoland()中的count值即可
