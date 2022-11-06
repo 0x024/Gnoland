@@ -37,7 +37,7 @@
 
 `make install`
 
-最后输入gnokey来确定环境是否搭建完成
+最后输入`gnokey`来确定环境是否搭建完成
 
 ### step1:
 
