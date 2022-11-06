@@ -1,7 +1,7 @@
 # Gnoland
-##本脚本不保留任何数据
-##本脚本主要通过python的方式批量生成Gno链的钱包
-###step0:
+## 本脚本不保留任何数据
+## 本脚本主要通过python的方式批量生成Gno链的钱包
+### step0:
 
 需要先搭建Gen的环境，
 
@@ -39,7 +39,7 @@ make install
 
 最后输入gnokey来确定环境是否搭建完成
 
-###step1:
+### step1:
 
 数据库采用sqllite 通过手动创建的，只有一个Gnoland表，表结构如下
 
@@ -49,12 +49,12 @@ make install
 "pub" varchar(256)----私钥
 "key" varchar(256)----助记词
 "balance" varchar(256)----余额）
-###step2：
+### step2：
 
 python3 1 进行钱包的创建
 
 python3 2 进行钱包余额查询
-###step3:
+### step3:
 
 1:如需修改创建钱包数量，需修改get_Gnoland()中的count值即可
 
